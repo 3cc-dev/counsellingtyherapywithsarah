@@ -2,12 +2,21 @@ import classNames from "classnames";
 
 export default function ButtonView({children, className, variant = 'default'}) {
   const variants = {
-    'default': 'px-6 py-4 rounded-full bg-black inline-block text-white text-xs md:text-base lg:text-lg',
-    'black': 'px-6 py-4 rounded-full bg-black inline-block text-white text-xs md:text-base lg:text-lg',
-    'white': 'px-6 py-4 rounded-full bg-white inline-block text-black shadow text-xs md:text-base lg:text-lg hover:bg-black hover:text-white',
-    'transparent': 'px-6 py-4 rounded-full bg-transparent inline-block text-black border border-black text-xs md:text-base lg:text-lg',
+    'default': 'border border-black bg-black text-white hover:bg-white hover:text-black',
+    'black': 'border border-black bg-black text-white hover:bg-white hover:text-black',
+    'sea-pink': 'text-sea-pink-800 bg-gradient-to-t from-sea-pink-500 to-sea-pink-300 hover:from-sea-pink-400 hover:to-sea-pink-200',
+    'white': 'bg-white shadow hover:bg-black hover:text-white',
+    'transparent': 'bg-transparent border border-black hover:bg-black hover:text-white',
   }
+
   return (
-    <span className={classNames(variants[variant], className, 'transition-all')}>{children}</span>
+    <span className={
+      classNames(
+        variants[variant],
+        className,
+        'px-6 py-4 rounded-full inline-block text-base lg:text-lg whitespace-nowrap',
+        'transition-all'
+      )
+    }>{children}</span>
   );
 }

@@ -1,34 +1,42 @@
 import Button from "./component/Button";
 import Heading from "./component/Heading";
-import Hero from "./component/Hero";
+import HeroSplit from "./component/HeroSplit";
 import Image from "next/image";
 import Navigation from "./component/Navigation";
 
 import whyCounselling from "./resources/images/why-counselling.jpg";
 import counsellingForLifesTransitions from "./resources/images/counselling-for-lifes-transitions.jpg";
+import P from "./component/P";
+import HeroBackground from "./component/HeroBackground";
 
 export default function Home() {
   return (
     <main>
-      <Navigation variant="-opaque"/>
+      <Navigation/>
       
-      <Hero image={whyCounselling}>
-        <Heading level={2}>Why Counselling?</Heading>
-        <p className="mt-4 font-light leading-loose">
-          For the most part we seek therapy in order to decrease our suffering. My commitment is to support you in achieving this goal. I believe that good therapy is deeply collaborative and  requires your sense of being safe and free from judgement as much as it does my compassion and training.
-        </p>
-        <Button className="mt-8 whitespace-nowrap">
+      <HeroSplit image={whyCounselling} >
+        <Heading className="!text-sm uppercase !text-sea-pink-500 font-normal tracking-widest" level={1}>Sarah Fysh<br/>Therapeutic Counselling</Heading>
+        <Heading className="!text-5xl lg:!text-6xl" level={1}>Why Counselling?</Heading>
+        <P>
+          For the most part we seek therapy in order to decrease our suffering.
+          My commitment is to support you in achieving this goal.
+          I believe that good therapy is deeply collaborative and requires your sense of being safe and free from judgement as much as it does my compassion and training.
+        </P>
+        <Button className="mt-8" variant="transparent">
           Speak to Sarah &rarr;
         </Button>
-      </Hero>
-
-      <section className="mt-12 [&_p]:mt-4">
-        <Heading level={2}>Counselling for life’s transitions</Heading>
-        <Image alt="Why Counselling?" className="object-cover object-center w-full h-full" src={counsellingForLifesTransitions} />
-        <p>Over the course of a lifetime, a significant amount of change can be expected which can lead people to seek counselling. Even positive changes like new jobs or parenthood can be accompanied by their own unique stressors.  Entering  the different stages of life such as mid-life or retirement might leave a person feeling isolated or adrift.</p>
-        <p>Other major life transitions might be  unexpected and deeply unwanted such as bereavement, separation or  illness.</p>
-        <p>I believe that changes, even difficult changes, can be worked through and can even influence personal growth.</p>
-      </section>
+      </HeroSplit>
+      
+      <HeroBackground className="text-white [&_p]:!leading-normal" image={counsellingForLifesTransitions}>
+        <div className="grid items-end lg:grid-cols-2">
+          <Heading className="!text-4xl lg:!text-6xl" level={2}>Counselling for<br/>life’s transitions</Heading>
+          <div>
+            <P>Over the course of a lifetime, a significant amount of change can be expected which can lead people to seek counselling. Even positive changes like new jobs or parenthood can be accompanied by their own unique stressors.  Entering  the different stages of life such as mid-life or retirement might leave a person feeling isolated or adrift.</P>
+            <P>Other major life transitions might be  unexpected and deeply unwanted such as bereavement, separation or  illness.</P>
+            <P>I believe that changes, even difficult changes, can be worked through and can even influence personal growth.</P>
+          </div>
+        </div>
+      </HeroBackground>
 
       <section className="mt-12 [&_p]:mt-4">
         <Heading level={2}>About me</Heading>
