@@ -1,6 +1,8 @@
-import classNames from 'classnames';
 import './globals.css'
-import { Cormorant_Garamond, Merriweather } from 'next/font/google'
+import classNames from 'classnames';
+import { Cormorant_Garamond } from 'next/font/google'
+import BacpLogo397908 from './resources/images/bacp-logo-397908.png';
+import Image from 'next/image';
 
 const garamond = Cormorant_Garamond({
   display: 'swap',
@@ -8,13 +10,6 @@ const garamond = Cormorant_Garamond({
   variable: '--font-garamond',
   weight: ['300', '500', '700'],
 });
-
-// const merriweather = Merriweather({
-//   display: 'swap',
-//   subsets: ['latin'],
-//   variable: '--font-merriweather',
-//   weight: ['300', '700'],
-// });
 
 export const metadata = {
   title: 'Sarah Fysh Counselling Therapy',
@@ -26,8 +21,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={classNames(garamond.className, /*merriweather.variable*/)}>
         {children}
-        <footer>
-          <p>BACP Registered Member: 397908</p>
+        <footer className="mt-12">
+          <Image src={BacpLogo397908} className="max-w-xs p-12 mx-auto" alt="BACP Registered Member: 397908" />
         </footer>
       </body>
     </html>

@@ -6,7 +6,7 @@ export default function ImageShadow({className, image, alt}) {
     <div className={
       classNames(
         className,
-        'translate-x-6 translate-y-6 rounded-lg lg:translate-x-0 lg:translate-y-0 aspect-square bg-gradient-to-t from-sea-pink-300 to-white'
+        'translate-x-6 translate-y-6 rounded-lg lg:translate-x-0 lg:translate-y-0 aspect-square bg-gradient-to-t from-sky-300 to-white'
       )
     }>
       <Image

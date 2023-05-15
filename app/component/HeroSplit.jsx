@@ -3,6 +3,11 @@ import Image from "next/image";
 import ImageShadow from "./ImageShadow";
 
 export default function HeroSplit({children, className, image, alt, variant='default'}) {
+
+  const variants = {
+    default: 'lg:min-h-screen',
+    profile: 'my-12',
+  }
   const variantsCol1 = {
     default: 'flex items-center justify-center lg:w-1/2',
     profile: 'flex items-center justify-center lg:w-1/2',
@@ -15,7 +20,12 @@ export default function HeroSplit({children, className, image, alt, variant='def
 
   return (
     <section className={classNames(className)}>
-      <div className="flex flex-col-reverse lg:flex-row lg:min-h-screen 2xl:h-auto">
+      <div className={
+        classNames(
+          variants[variant],
+          'flex flex-col-reverse lg:flex-row 2xl:h-auto'
+        )
+      }>
         <div className={variantsCol1[variant]}>
           <div className="max-w-lg p-8 mt-4">
             {children}
