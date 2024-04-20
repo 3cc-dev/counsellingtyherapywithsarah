@@ -5,8 +5,8 @@ import ImageShadow from "./ImageShadow";
 export default function HeroSplit({children, className, image, alt, variant='default'}) {
 
   const variants = {
-    default: 'lg:min-h-screen',
-    profile: 'my-12',
+    default: 'lg:my-12 flex flex-col-reverse lg:flex-row 2xl:h-auto',
+    profile: 'my-12 flex flex-col-reverse lg:flex-row 2xl:h-auto',
   }
   const variantsCol1 = {
     default: 'flex items-center justify-center lg:w-1/2',
@@ -14,8 +14,8 @@ export default function HeroSplit({children, className, image, alt, variant='def
   };
 
   const variantsCol2 = {
-    default: 'flex items-center m-12 lg:w-1/2 2xl:p-32',
-    profile: 'flex items-center m-12 lg:w-1/3 2xl:p-32 mx-auto w-2/3 p-12',
+    default: 'flex items-center m-12 lg:w-1/3 2xl:p-32',
+    profile: 'flex items-center mb-12 lg:w-1/3 2xl:p-32 mx-auto p-12',
   };
 
   return (
@@ -23,7 +23,6 @@ export default function HeroSplit({children, className, image, alt, variant='def
       <div className={
         classNames(
           variants[variant],
-          'flex flex-col-reverse lg:flex-row 2xl:h-auto'
         )
       }>
         <div className={variantsCol1[variant]}>

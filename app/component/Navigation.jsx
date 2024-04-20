@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import Button from "./Button";
 import LogoFull from "../resources/svg/sarah-fysh-logo-full.svg";
+import ButtonView from "./ButtonView";
 
 export default function Navigation({children, variant = 'default'}) {
   const variants = {
@@ -16,10 +17,11 @@ export default function Navigation({children, variant = 'default'}) {
         role="navigation"
       >
         <LogoFull className="w-48 mx-auto lg:w-64 lg:mx-0" />
-        <Button
-          className="hidden lg:inline-block"
-          variant="transparent"
-        >Speak to Sarah &rarr;</Button>
+        <a href="#contact">
+          <ButtonView className="hidden lg:inline-block" variant="transparent">
+            Speak to Sarah &rarr;
+          </ButtonView>
+        </a>
       </nav>
     </header>
   );

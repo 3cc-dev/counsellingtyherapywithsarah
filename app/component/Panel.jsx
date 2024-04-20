@@ -4,7 +4,7 @@ import Heading from "./Heading";
 export default function Panel({children, className, title, variant = 'default'}) {
 
   const variants = {
-    default: 'grid md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8',
+    default: 'grid mt-8 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8',
     'cols-3': 'grid mt-8 gap-x-4 gap-y-8 lg:grid-cols-3'
   }
   return (

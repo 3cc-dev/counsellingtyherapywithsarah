@@ -16,39 +16,37 @@ import Panel from "./component/Panel";
 export default function Home() {
   return (
     <main>
-      <Navigation/>
-      
+      <Navigation />
+
       <HeroSplit image={whyCounselling} alt="Why Counselling?">
         <Heading
           className="!text-sm uppercase !text-sky-500 font-normal tracking-widest"
           level={1}
-        >Sarah Fysh<br/>Therapeutic Counselling</Heading>
+        >Sarah Fysh<br />Therapeutic Counselling</Heading>
         <Heading
           className="!text-5xl lg:!text-6xl"
           level={2}
         >Why Counselling?</Heading>
-        <P>
-          For the most part we seek therapy in order to decrease our suffering.
-          My commitment is to support you in achieving this goal.
-          I believe that good therapy is deeply collaborative and requires your sense of being safe and free from judgement as much as it does my compassion and training.
-        </P>
+        <P>There are many reasons why people seek therapy, it might be that you need support whilst navigating a difficult life experience or you are struggling to move forward after a past trauma. Maybe you are feeling lost or adrift and don&apos;t know why you are feeling the way you are. Sometimes heavy feelings can obscure healthy possibilities.</P>
+        <P>I believe that good therapy is deeply collaborative and requires your sense of feeling safe and free from judgement as it does my compassion and training. Everyone approaches therapy with their own unique set of circumstances and expectations. Curiosity is a natural part of the process and so I remain open to discussing any questions you might have throughout our time together.</P>
         <a href="#contact">
           <ButtonView className="mt-8" variant="transparent">
             Speak to Sarah &rarr;
           </ButtonView>
         </a>
       </HeroSplit>
-      
+
       <HeroBackground className="text-white [&_p]:!leading-normal" image={counsellingForLifesTransitions}>
-        <div className="grid items-end md:grid-cols-2">
+        <div className="grid items-start md:grid-cols-2">
           <Heading
             className="!text-4xl md:!text-5xl lg:!text-6xl"
             level={2}
-            >Counselling for<br/>life’s transitions</Heading>
+          >Counselling for<br />life&apos;s transitions</Heading>
           <div>
-            <P>Over the course of a lifetime, a significant amount of change can be expected which can lead people to seek counselling. Even positive changes like new jobs or parenthood can be accompanied by their own unique stressors.  Entering  the different stages of life such as mid-life or retirement might leave a person feeling isolated or adrift.</P>
-            <P>Other major life transitions might be  unexpected and deeply unwanted such as bereavement, separation or  illness.</P>
-            <P>I believe that changes, even difficult changes, can be worked through and can even influence personal growth.</P>
+            <P>Over the course of a lifetime, a significant amount of change can be expected which can lead people to seek counselling. Even positive experiences and new opportunities can present their own set of unique stressors. Entering the different stages of life such as mid-life or retirement might leave a person feeling isolated or adrift.</P>
+            <P>Other major life transitions might be unexpected and deeply unwanted such as bereavement, separation or  illness.</P>
+            <P>Whilst there is not a fix for many of life&apos;s most difficult experiences, I believe it is possible to reduce the sense of isolation resulting from them and when a person feels less isolated there are more opportunities for healing and personal growth.</P>
+            <P>Some of the areas that I have supported clients in: <em>Grief, loss and bereavement, Relationships difficulties and separation, Mid-life changes and menopause, Loneliness, Anxiety and depression, Low self esteem and confidence, Parenting and family issues, Eating and food issues, Sexuality and identity, Neural diversity, Procrastination and perfectionism.</em></P>
           </div>
         </div>
       </HeroBackground>
@@ -62,40 +60,34 @@ export default function Home() {
           className="!text-5xl lg:!text-6xl"
           level={3}
         >About me</Heading>
-        <P>I am a warm and intuitive Therapeutic Counsellor, my approach is Integrative which means  I draw on various therapeutic practices to support you as an individual. For those interested in technical terms, my way of working is mostly influenced by person centred (humanistic) therapy with a psychodynamic perspective. But mainly what I hope clients find in me is a ‘real’ person.</P>
-        <P>I provide both remote and in person individual counselling. Safety and trust are fundamental to  my work. I am a member of the BACP, which means I follow their Ethical framework for Counselling practice. </P>
+        <P>I am a warm and intuitive Therapeutic Counsellor, my approach is Integrative which means I draw on various therapeutic practices to support you as an individual. For those interested in technical terms, my way of working is mostly influenced by person centred (humanistic) therapy with a psychodynamic perspective. But mainly what I hope clients find in me is a &apos;real&apos; person.</P>
+        <P>I provide both remote and in person individual counselling. I don&apos;t believe there is one “right way”, only whether it facilitates growth, or not. Safety and trust are fundamental to my work. I am a member of the BACP, which means I follow their Ethical framework for Counselling practice.</P>
       </HeroSplit>
 
-      <Panel>
-          <>
-            <div>
-              <h3>Membership category</h3>
-              <p className="text-3xl">Registered Member MBACP</p>
-            </div>
-            <div>
-              <h3>Membership number</h3>
-              <p className="text-3xl">00964269</p>
-            </div>
-            <div>
-              <h3>Register number</h3>
-              <p className="text-3xl">397908</p>
-            </div>
-            <div>
-              <h3>Expiry date</h3>
-              <p className="text-3xl">22nd March 2024</p>
-            </div>
-          </>
+      <Panel title="Registered Member MBACP">
+        <>
+          <div>
+            <h3>Membership number</h3>
+            <p className="text-3xl">00964269</p>
+          </div>
+          <div>
+            <h3>Register number</h3>
+            <p className="text-3xl">397908</p>
+          </div>
+        </>
       </Panel>
 
       <HeroSplit className="flex-col [&_>_div]:!flex-col [&_>_div]:lg:!flex-row" variant="profile" image={contactMe} alt="Sarah Fysh">
         <Heading
           className="!text-4xl md:!text-5xl lg:!text-6xl"
           level={2}
-          >Practicalities</Heading>
+        >Practicalities</Heading>
+        <Heading level={3} className="mt-8">Session one</Heading>
+        <P>During our first session, whether it is online or face-to-face, we will have a conversation about your current circumstances, including how you are doing emotionally and physically. We will explore your concerns and goals in greater depth, and this assessment will inform how we can best work together to address your needs.</P>
         <Heading level={3} className="mt-8">Format</Heading>
         <P className="mt-2">I am currently offering Face to face sessions and remote sessions - by telephone and online via Google Meet</P>
         <Heading level={3}>Fees</Heading>
-        <P className="mt-2">Sessions are 50 mins, in person sessions are £55 per session and Online or telephone are £45 per session and payable by bank transfer on the same day as the session.</P>
+        <P className="mt-2">Sessions are 50 mins, in person sessions are £65 per session and Online or telephone are £55 per session and payable by bank transfer on the same day as the session.</P>
         <Heading level={3}>Missed sessions</Heading>
         <P className="mt-2">I require a minimum of 24 hours notice to cancel a session, otherwise the full fee is due.</P>
         <Heading level={3}>Availability</Heading>
