@@ -43,10 +43,10 @@ export default function Home() {
             level={2}
           >Counselling for<br />life&apos;s transitions</Heading>
           <div>
-            <P>Over the course of a lifetime, a significant amount of change can be expected which can lead people to seek counselling. Even positive experiences and new opportunities can present their own set of unique stressors. Entering the different stages of life such as mid-life or retirement might leave a person feeling isolated or adrift.</P>
+            <P>Over the course of a lifetime, a significant amount of change can be expected which can lead people to seek counselling. Even positive experiences and new opportunities can present their own set of unique stressors. Entering the different stages of life such as mid-life or young adulthood might leave a person feeling isolated or adrift.</P>
             <P>Other major life transitions might be unexpected and deeply unwanted such as bereavement, separation or  illness.</P>
             <P>Whilst there is not a fix for many of life&apos;s most difficult experiences, I believe it is possible to reduce the sense of isolation resulting from them and when a person feels less isolated there are more opportunities for healing and personal growth.</P>
-            <P>Some of the areas that I have supported clients in: <em>Grief, loss and bereavement, Relationships difficulties and separation, Mid-life changes and menopause, Loneliness, Anxiety and depression, Low self esteem and confidence, Parenting and family issues, Eating and food issues, Sexuality and identity, Neural diversity, Procrastination and perfectionism.</em></P>
+            <P>Some of the areas that I have supported clients in: <em>Grief, loss and bereavement, Relationships difficulties and separation, Mid-life changes and menopause, Parenting and family issues, Loneliness, Anxiety and depression, Low self esteem and confidence, Procrastination and perfectionism. Neurodiversity, Eating disorders, OCD, Panic attacks and insomnia, abuse and bullying, work related issues: stress and redundancy, Sexuality and identity.</em></P>
           </div>
         </div>
       </HeroBackground>
@@ -60,7 +60,9 @@ export default function Home() {
           className="!text-5xl lg:!text-6xl"
           level={3}
         >About me</Heading>
-        <P>I am a warm and intuitive Therapeutic Counsellor, my approach is Integrative which means I draw on various therapeutic practices to support you as an individual. For those interested in technical terms, my way of working is mostly influenced by person centred (humanistic) therapy with a psychodynamic perspective. But mainly what I hope clients find in me is a &apos;real&apos; person.</P>
+        <P>I am an experienced Integrative Counsellor who works with a wide range of issues and emotional difficulties. My style is warm and empathic using appropriate challenges to support change.</P>
+        <P>For those interested in technical terms, my way of working is mostly influenced by humanistic therapy with a psychodynamic perspective. But mainly what I hope clients find in me is a 'real' person.</P>
+        <P>In addition to my private practise I work as a freelance student counsellor supporting young adults in higher education as they navigate their shift towards independence.</P>
         <P>I provide both remote and in person individual counselling. I don&apos;t believe there is one “right way”, only whether it facilitates growth, or not. Safety and trust are fundamental to my work. I am a member of the BACP, which means I follow their Ethical framework for Counselling practice.</P>
       </HeroSplit>
 
@@ -87,11 +89,11 @@ export default function Home() {
         <Heading level={3} className="mt-8">Format</Heading>
         <P className="mt-2">I am currently offering Face to face sessions and remote sessions - by telephone and online via Google Meet</P>
         <Heading level={3}>Fees</Heading>
-        <P className="mt-2">Sessions are 50 mins, in person sessions are £65 per session and Online or telephone are £55 per session and payable by bank transfer on the same day as the session.</P>
+        <P className="mt-2">Sessions are 50 mins, in person sessions are £70 per session and Online is £60 per session and payable by bank transfer on the same day as the session. Some reduced rates and concessions available.</P>
         <Heading level={3}>Missed sessions</Heading>
         <P className="mt-2">I require a minimum of 24 hours notice to cancel a session, otherwise the full fee is due.</P>
         <Heading level={3}>Availability</Heading>
-        <P className="mt-2">Weekday mornings for in person and afternoon and evenings for online.</P>
+        <P className="mt-2">Weekday and evenings online, I have some inperson slots available in both NW6 and W4 please enquire for current availability.</P>
         <Heading level={3}>Privacy & confidentiality</Heading>
         <P className="mt-2">My contract outlines how I maintain client privacy and confidentiality including data protection (GDPR).</P>
       </HeroSplit>
@@ -102,10 +104,6 @@ export default function Home() {
             <div>
               <h3>Email</h3>
               <p className="text-2xl"><a href="mailto:counsellingsjfs@gmail.com">counsellingsjfs@gmail.com</a></p>
-            </div>
-            <div>
-              <h3>Telephone</h3>
-              <p className="text-2xl"><a href="tel:00447866701340">07866701340</a></p>
             </div>
             <div>
               <h3>Location</h3>
