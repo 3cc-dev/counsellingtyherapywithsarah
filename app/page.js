@@ -61,7 +61,7 @@ export default function Home() {
           level={3}
         >About me</Heading>
         <P>I am an experienced Integrative Counsellor who works with a wide range of issues and emotional difficulties. My style is warm and empathic using appropriate challenges to support change.</P>
-        <P>For those interested in technical terms, my way of working is mostly influenced by humanistic therapy with a psychodynamic perspective. But mainly what I hope clients find in me is a 'real' person.</P>
+        <P>For those interested in technical terms, my way of working is mostly influenced by humanistic therapy with a psychodynamic perspective. But mainly what I hope clients find in me is a &lsquo;real&rsquo; person.</P>
         <P>In addition to my private practise I work as a freelance student counsellor supporting young adults in higher education as they navigate their shift towards independence.</P>
         <P>I provide both remote and in person individual counselling. I don&apos;t believe there is one “right way”, only whether it facilitates growth, or not. Safety and trust are fundamental to my work. I am a member of the BACP, which means I follow their Ethical framework for Counselling practice.</P>
       </HeroSplit>
