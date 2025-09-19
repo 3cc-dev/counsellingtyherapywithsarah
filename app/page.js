@@ -27,7 +27,7 @@ export default function Home() {
           className="!text-5xl lg:!text-6xl"
           level={2}
         >Why Counselling?</Heading>
-        <P>There are many reasons why people seek therapy, it might be that you need support whilst navigating a difficult life experience or you are struggling to move forward after a past trauma. Maybe you are feeling lost or adrift and don&apos;t know why you are feeling the way you are. Sometimes heavy feelings can obscure healthy possibilities.</P>
+        <P>There are many reasons why people seek therapy, it might be that you need support whilst navigating a difficult life experience or that you are struggling to move forward after a past trauma. Maybe you are feeling lost or adrift and don&apos;t know why you are feeling the way you are. Sometimes heavy feelings can obscure healthy possibilities.</P>
         <P>I believe that good therapy is deeply collaborative and requires your sense of feeling safe and free from judgement as it does my compassion and training. Everyone approaches therapy with their own unique set of circumstances and expectations. Curiosity is a natural part of the process and so I remain open to discussing any questions you might have throughout our time together.</P>
         <a href="#contact">
           <ButtonView className="mt-8" variant="transparent">
@@ -89,11 +89,11 @@ export default function Home() {
         <Heading level={3} className="mt-8">Format</Heading>
         <P className="mt-2">I am currently offering Face to face sessions and remote sessions - by telephone and online via Google Meet</P>
         <Heading level={3}>Fees</Heading>
-        <P className="mt-2">Sessions are 50 mins, in person sessions are £70 per session and Online is £60 per session and payable by bank transfer on the same day as the session. Some reduced rates and concessions available.</P>
+        <P className="mt-2">Sessions are 50 mins. For an in person session the cost is: £75, I offer a slightly reduced rate for online sessions please enquire for availability. Fees are payable by bank transfer on the same day as the session. Some concessions available.</P>
         <Heading level={3}>Missed sessions</Heading>
         <P className="mt-2">I require a minimum of 24 hours notice to cancel a session, otherwise the full fee is due.</P>
         <Heading level={3}>Availability</Heading>
-        <P className="mt-2">Weekday and evenings online, I have some inperson slots available in both NW6 and W4 please enquire for current availability.</P>
+        <P className="mt-2">I work weekday and evenings online, I have some inperson slots available in both NW6 and W4 please enquire for current availability.</P>
         <Heading level={3}>Privacy & confidentiality</Heading>
         <P className="mt-2">My contract outlines how I maintain client privacy and confidentiality including data protection (GDPR).</P>
       </HeroSplit>
